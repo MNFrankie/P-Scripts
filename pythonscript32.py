@@ -18,8 +18,8 @@ tn.write(b"cisco\n")
 tn.write(b"configure terminal\n")
 
     for n in range (2,11):
-        tn.write("vlan " + str(n) + "\n")
-        tn.write("name Python_VLAN_" + str(n) + "\n")
+        tn.write(b"vlan " + str(n) + "\n")
+        tn.write(b"name Python_VLAN_" + str(n) + "\n")
 
 tn.write(b"end\n")
 tn.write(b"exit\n")
