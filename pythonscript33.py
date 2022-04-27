@@ -1,8 +1,6 @@
 import getpass
 import telnetlib
-
 f = open("switches")
-
 for IP in f:
     IP=IP.strip()
     print("Configuring Switch" + (IP))
